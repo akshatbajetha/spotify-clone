@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/utility.css">
+</head>
+
+<body>
+
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img class="invert" src="/img/close.svg" alt="">
+            </div>
+            <div class="home m-1 p-1 rounded bg-grey">
+                <div class="logo"><img class="invert" width="110px" src="./img/logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="./img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="./img/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library m-1 p-1 bg-grey rounded">
+                <div class="heading items-center">
+                    <img class="invert" src="./img/playlist.svg" alt="playlist">
+                    <h2>Your library</h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                    </ul>
+
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="right rounded bg-grey">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40px" class="invert hamburger" src="/img/hamburger.svg" alt="">
+                        <img width="20px" class="invert" src="./img/left.svg" alt="">
+                        <img width="20px" class="invert" src="./img/right.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign Up</button>
+                    <button class="loginbtn">Log In</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainer">
+                    
+                    
+                </div>
+
+
+                <div class="playbar">
+
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+
+                    <div class="aboveBar">
+
+                        <div class="songInfo">
+
+                        </div>
+                        
+                        <div class="songButtons">
+                            <img class="invert" width="30px" id="previous" src="./img/previous.svg" width="15px" alt="">
+                            <img class="invert" width="35px" id="play" src="./img/play3.svg" alt="">
+                            <img class="invert" width="30px" id="next" src="./img/next.svg" width="15px" alt="">
+                        </div>
+
+                        <div class="timeVol">
+
+                            <div class="songTime">
+                            
+                            </div>
+
+                            <div class="volume">
+                                <img class="invert" id="volumeIcon" src="/img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="volumeSlider">
+                                </div>
+                            </div>
+
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- Responsiveness -->
