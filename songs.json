@@ -1,0 +1,51 @@
+{
+    "playlists": [
+      {
+        "name": "Lofi Beats",
+        "cover": "/songs/Lofi Beats/cover.jpeg",
+        "info": {
+          "title": "Lofi Beats",
+          "description": "Relaxing lofi beats to study and relax to."
+        },
+        "songs": [
+          "Foresight - Enough Cereals.mp3",
+          "Moments - C4C.mp3",
+          "Starry Night - Lotus Beats.mp3"
+        ]
+      },
+      {
+        "name": "Nostalgic Bollywood",
+        "cover": "/songs/Nostalgic Bollywood/cover.jpeg",
+        "info": {
+          "title": "Nostalgic Bollywood",
+          "description": "Nostalgic Bollywood songs from 2000-2010"
+        },
+        "songs": [
+          "Chand Sifarish - Shaan.mp3",
+          "Desi Girl - Vishal-Shekhar.mp3",
+          "Kajra Re - Alisha Chinai, Javed Ali, and Shankar Mahadevan.mp3",
+          "Kal Ho Na Ho - Sonu Nigam.mp3",
+          "Tujh Mein Rab Dikhta Hai - Jaideep Sahni.mp3"
+        ]
+      },
+      {
+        "name": "Random Songs",
+        "cover": "/songs/Random Songs/cover.jpeg",
+        "info": {
+            "title": "Random Songs",
+            "description": "Random songs from various genres"
+        },
+        "songs": [
+            "24-7, 365 - Elijah Woods.mp3",
+            "I Wanna Be Yours - Arctic Monkeys.mp3",
+            "Sex, Drugs, etc. - Beach Weather.mp3",
+            "Space Cadet - Metro Boomin.mp3",
+            "Sundown - Nic D, Vwillz.mp3",
+            "The Color Violet - Tory Lanez.mp3",
+            "Toothbrush - DNCE.mp3"
+
+        ]
+      }
+    ]
+  }
+  
