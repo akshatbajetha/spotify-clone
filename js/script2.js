@@ -203,15 +203,19 @@ async function main() {
     }
   });
 
-  if(currentSong.ended){
+  currentSong.addEventListener("ended", () => {
     let currentSongPath = currentSong.src.split("/").slice(-1)[0];
     let index = songs.findIndex(
       (song) => song === decodeURIComponent(currentSongPath)
     );
-    if (index + 1 < songs.length) {
+    if (index !== -1 && index + 1 < songs.length) {
       playMusic(songs[index + 1]);
     }
-  }
+    else{
+      play.src = "/img/play3.svg";
+    }
+  });
+  
 
 }
 
