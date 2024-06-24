@@ -132,25 +132,23 @@ async function main() {
 
   next.addEventListener("click", () => {
     let currentSongPath = currentSong.src.split("/").slice(-1)[0];
-    console.log('Current Song Path:', currentSongPath); // Debugging
-    console.log(songs)
-    let index = songs.findIndex(song => song === decodeURIComponent(currentSongPath));
-    console.log('Current Song Index:', index); // Debugging
-    if ((index + 1) < songs.length) {
+    let index = songs.findIndex(
+      (song) => song === decodeURIComponent(currentSongPath)
+    );
+    if (index + 1 < songs.length) {
       playMusic(songs[index + 1]);
     }
   });
-  
+
   previous.addEventListener("click", () => {
     let currentSongPath = currentSong.src.split("/").slice(-1)[0];
-    console.log('Current Song Path:', currentSongPath); // Debugging
-    let index = songs.findIndex(song => song === decodeURIComponent(currentSongPath));
-    console.log('Current Song Index:', index); // Debugging
-    if (index !== -1 && (index - 1) >= 0) {
+    let index = songs.findIndex(
+      (song) => song === decodeURIComponent(currentSongPath)
+    );
+    if (index !== -1 && index - 1 >= 0) {
       playMusic(songs[index - 1]);
     }
   });
-  
 
   currentSong.addEventListener("timeupdate", () => {
     document.querySelector(".songTime").innerHTML = `${formatTime(
@@ -204,6 +202,17 @@ async function main() {
       volumeSlider.value = currentVolume * 100;
     }
   });
+
+  if(currentSong.ended){
+    let currentSongPath = currentSong.src.split("/").slice(-1)[0];
+    let index = songs.findIndex(
+      (song) => song === decodeURIComponent(currentSongPath)
+    );
+    if (index + 1 < songs.length) {
+      playMusic(songs[index + 1]);
+    }
+  }
+
 }
 
 main();
